@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Employee Directory</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="body">
+
+  <div class="controls">
+    <h1>Employee Directory</h1>
+      <input type="text" id="searchInput" placeholder="Search by name or email" class="input-1"/>
+      <button id="filterBtn" class="input-2">Filter</button>
+  </div>
+
+  <div id="filterPanel" class="filter-panel1 hidden">
+    <input type="text" id="filterFirstName" placeholder="First Name" />
+    <input type="text" id="filterDepartment" placeholder="Department" />
+    <input type="text" id="filterRole" placeholder="Role" />
+    <button id="applyFilter">Apply Filter</button>
+  </div>
+
+ 
+<div class="filter-panel">
+    <div id="sortOptions" class="sort">
+    <label>Sort:
+      <select id="sortBy">
+        <option value="">-- Select --</option>
+        <option value="firstName">First Name</option>
+        <option value="department">Department</option>
+      </select>
+    </label>
+  </div>
+
+<div class="pagination-controls show">
+    <label for="itemsPerPage">Show:</label>
+    <select id="itemsPerPage">
+      <option value="10">10</option>
+      <option value="25">25</option>
+      <option value="50">50</option>
+      <option value="100">100</option>
+    </select>
+    <div id="pagination"></div>
+  </div>
+  <button id="addBtn" class="button">Add Employee</button>
+
+</div>
+  
+
+  <div id="employeeList" class="employee-list"></div>
+
+  <!-- Add/Edit Form -->
+  
+<div id="employeeFormContainer" class="hidden">
+  <form id="employeeForm" class="form-wrapper">
+    <h2 id="formTitle">Add/Edit Employee</h2>
+
+    <input type="hidden" id="empId" />
+
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" required />
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" required />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" required />
+    </div>
+
+    <div class="form-group">
+      <label for="department">Department</label>
+      <input type="text" id="department" required />
+    </div>
+
+    <div class="form-group">
+      <label for="role">Role</label>
+      <input type="text" id="role" required />
+    </div>
+
+    <div class="form-buttons">
+      <button type="submit" class="submit-btn">Save</button>
+      <button type="button" id="cancelBtn" class="cancel-btn">Cancel</button>
+    </div>
+  </form>
+</div>
+<div class="end-tag">
+<p class="para">@ 2025 Employee Directory App. All rights reserved.</p>
+</div>
+
+  </div>
+
+  
+
+  <script src="app.js"></script>
+</body>
+</html>
