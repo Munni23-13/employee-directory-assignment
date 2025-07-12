@@ -31,5 +31,8 @@ employee-directory/
 - **Pagination** with selectable page size (10, 25, 50, 100)
 - **Responsive** layout for desktop, tablet, and mobile
 
+- https://github.com/Munni23-13/employee-directory-assignment/blob/main/Employee%20directory%20page.jpg?raw=true
+- 
+
 
 
